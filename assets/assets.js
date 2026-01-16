@@ -21,6 +21,7 @@ import send from './1259881.png'
 import email from './tl.webp'
 import lightmode from './sun.png'
 import Dlogo from'./Screenshot_2025-10-09_153112-removebg-preview.png'
+
 export const assets={
     logo,
     arrow,
@@ -37,7 +38,8 @@ export const assets={
     email,
     lightmode,
     logo2,
-    Dlogo
+    Dlogo,
+    
 }
 export const infoList = [
   {

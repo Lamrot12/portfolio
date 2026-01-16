@@ -1,7 +1,8 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import { motion } from "motion/react"
+import { motion } from "framer-motion"
+
 const Header = ({isDarkMode}) => {
   const [typedText, setTypedText] = useState("")
   const fullText = "Web developer based in Ethiopia"
@@ -54,7 +55,7 @@ const Header = ({isDarkMode}) => {
          initial={{y: 30, opacity:0}}
         whileInView={{y:0 ,opacity:1 }}
          transition={{duration:0.6, delay:1.2}} 
-        href="" download className={`px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2   ${isDarkMode?'text-black bg-white':''}`}> my resume <Image src={assets.download} alt="download icon" className="w-4"/></motion.a>
+        href="../assets/Lamrot-Tariku-Shire-FlowCV-Resume-20251009.pdf" download className={`px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2   ${isDarkMode?'text-black bg-white':''}`}> my resume <Image src={assets.download} alt="download icon" className="w-4"/></motion.a>
     </div>
 </div>
   )

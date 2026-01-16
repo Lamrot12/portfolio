@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { motion } from "motion/react"
-
+import { motion } from "framer-motion"
 
 const contact = ({isDarkMode}) => {
    const [result, setResult] = useState("")

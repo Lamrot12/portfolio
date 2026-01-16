@@ -61,9 +61,9 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
       
       <div className="flex items-center gap-4">
-        <button onClick={() => setIsDarkMode(prev => !prev)}>
+        {/* <button onClick={() => setIsDarkMode(prev => !prev)}>
           <Image src={isDarkMode ? assets.lightmode : assets.moon} className="w-6" alt={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'} />
-        </button>
+        </button> */}
 
         <a
           href="#contact"

@@ -1,7 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    turbo: false, // 👈 disables Turbopack
+  reactStrictMode: true,
+  swcMinify: true,
+  // Image optimization configuration
+  images: {
+    domains: ['images.unsplash.com'],
+  },
+  // Webpack configuration
+  webpack: (config) => {
+    return config;
+  },
+  // Environment variables
+  env: {
+    // Add your environment variables here
   },
 };
 
